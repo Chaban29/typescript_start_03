@@ -55,3 +55,15 @@ y = '2';
 console.log(y);
 y = true;
 console.log(y);
+var not;
+not = 'hello';
+var names = ['Roman', 'Alex', 'Simple', 'John'];
+// names[0] = 'Igor'; // Error readonly
+console.log(names);
+var numbersFromUser = [1, 2, 3, 4, 5];
+numbersFromUser.pop();
+numbersFromUser.push(8);
+function calc(a, b) {
+    console.log(a + b);
+}
+calc(10, 30);

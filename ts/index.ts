@@ -98,7 +98,6 @@ numberSome = 10010101021211;
 let u: any = 100;
 u = '100';
 
-
 let y: unknown = 1;
 console.log(y);
 y = '2';
@@ -106,7 +105,23 @@ console.log(y);
 y = true;
 console.log(y);
 
-
 let not: string;
 
 not = 'hello';
+
+const names: readonly string[] = ['Roman', 'Alex', 'Simple', 'John'];
+
+// names[0] = 'Igor'; // Error readonly
+
+console.log(names);
+
+const numbersFromUser: number[] = [1, 2, 3, 4, 5];
+
+numbersFromUser.pop();
+numbersFromUser.push(8);
+
+function calc(a: number, b: number): void {
+  console.log(a + b);
+}
+
+calc(10, 30);
